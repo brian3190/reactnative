@@ -1,1 +1,2 @@
 # reactnative
+Sample ReactNative app
