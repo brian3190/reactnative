@@ -7,7 +7,14 @@ import { Video } from './app/views/Video.js';
 import { VideoDetail } from './app/views/VideoDetail.js';
 import { Register } from './app/views/Register.js';
 import { Login } from './app/views/Login.js';
-import { StackNavigator } from 'react-navigation';
+
+import { Quiz } from './app/views/Quiz.js';
+import { Finish } from './app/views/QuizFinish.js';
+
+import { Blog } from './app/views/Blogs.js';
+import { BlogDetail } from './app/views/BlogDetail.js';
+
+import { About } from './app/views/About.js';
 
 const MyRoutes = StackNavigator({
     HomeRT: {
@@ -28,6 +35,21 @@ const MyRoutes = StackNavigator({
     LoginRT: {
         screen: Login
     },
+    QuizRT: {
+        screen: Quiz
+    },
+    FinishRT: {
+        screen: Finish
+    },
+    BlogRT: {
+        screen: Blog
+    },
+    BlogDetailRT: {
+        screen: BlogDetail
+    },
+    AboutRT: {
+        screen: About
+    }
 },
     {
         initialRouteName: 'HomeRT'
