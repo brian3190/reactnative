@@ -50,11 +50,15 @@ export class Header extends React.Component {
     render() {
         let display = this.state.isLoggedIn ? this.state.loggedUser : this.props.message ;
         return (
-            <View style={StyleSheet.headStyle}>
+            <View style={styles.headStyle}>
                 <Image
-                    style={StyleSheet.logoStyle}
-                    source={ require('./img/Globo_logo_REV.png')}
+                    style={styles.logoStyle}
+                    source={ require('./img/globo_logo_REV.png')}
                 />
+                <Text
+                    style={styles.logoText}
+                    onPress={this.toggleUser}>Globomantics
+                </Text>
                 <Text
                     style={styles.headText}
                     onPress={this.toggleUser}>{display}
@@ -66,6 +70,8 @@ export class Header extends React.Component {
 
 const styles = StyleSheet.create({
     headText: {
+        paddingTop: 20,
+        paddingRight: 10,
         textAlign: 'right',
         color: '#ffffff',
         fontSize: 20,
@@ -74,14 +80,21 @@ const styles = StyleSheet.create({
     headStyle: {
         paddingTop: 30,
         paddingRight: 10,
-        backgroundColor: Platform.OS === 'android'? '#31e981' : '#35605a',
+        backgroundColor: Platform.OS === 'android'? '#35605a' :'#31e981',
         flex: 1,
         flexDirection: 'row',
         borderBottomWidth: 2,
         borderColor: '#000000'
     },
+    logoText: {
+        paddingTop: 20,
+        textAlign: 'left',
+        color: '#ffffff',
+        fontSize: 20,
+        flex: 1
+    },
     logoStyle: {
-        flex: 1,
+        flex: 0.4,
         width: undefined,
         height: undefined,
     }

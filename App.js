@@ -11,7 +11,7 @@ import { Login } from './app/views/Login.js';
 import { Quiz } from './app/views/Quiz.js';
 import { Finish } from './app/views/QuizFinish.js';
 
-import { Blog } from './app/views/Blogs.js';
+import { Blog } from './app/views/Blog.js';
 import { BlogDetail } from './app/views/BlogDetail.js';
 
 import { About } from './app/views/About.js';

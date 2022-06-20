@@ -6,13 +6,13 @@ export class Question extends React.Component {
         header: null
     };
 
-    constuctor(props) {
+    constructor(props) {
         super(props);
         this.state = {
             isSselected: false,
             isCorrect: false
         }
-    }
+    };
 
     chooseAnswer=(ans)=>{
         let worth = 25;

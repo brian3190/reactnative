@@ -15,7 +15,7 @@ export class Home extends React.Component {
 
         return(
             <View style = { styles.container }>
-                <Header navigate={navigate} message = 'Press to Login' />
+                <Header navigate={navigate} message = 'LOGIN' />
                 <Hero />
                 <Menu navigate = { navigate } />
             </View>
@@ -26,6 +26,7 @@ export class Home extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        textAlign: 'right',
         // flexDirection: 'row'
     }
 });

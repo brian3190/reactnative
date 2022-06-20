@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView, Image } from 'react-native';
 
-const aboutGlobo = ``
+const aboutGlobo = `We are a survey company.`
 
-const whatGlobo = ``
+const whatGlobo = `We help companies find appropriate tech talent.`
 
 export class About extends React.Component {
     static navigationOptions = {
@@ -19,7 +19,7 @@ export class About extends React.Component {
                 <Text style={styles.aboutText}>{aboutGlobo}</Text>
 
                 <Image style={styles.pics} source={require('../sections/img/computer640.jpg')}/>
-                <Text style={styles.aboutTitle}>What We Do}</Text>
+                <Text style={styles.aboutTitle}>What We Do</Text>
                 <Text style={styles.aboutText}>{whatGlobo}</Text>
                 <Text onPress={() => this.props.navigation.goBack()} style={styles.backButton}>Go BACK</Text>
             </ScrollView>

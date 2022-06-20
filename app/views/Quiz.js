@@ -82,9 +82,9 @@ export class Quiz extends React.Component {
                 )}
 
                 { !this.state.completedQuiz && (
-                    <TouhcableHighlight style={styles.disabled} >
+                    <TouchableHighlight style={styles.disabled} >
                         <Text>Answer all the questions</Text>
-                    </TouhcableHighlight>
+                    </TouchableHighlight>
                 )}
 
                 { this.state.completedQuiz && (
