@@ -27,9 +27,9 @@ export class Contact extends React.Component{
         const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
-                <Header navigate = {navigate} message = 'Press to Login' />
+                <Header navigate = {navigate} message = 'Login' />
                 <Text style={styles.heading}>Contact Us</Text>
-
+                
                 <TextInput
                     style={styles.inputs}
                     onChangeText={(text) => this.setState({name: text})}
@@ -45,7 +45,7 @@ export class Contact extends React.Component{
                 />
 
                 <TextInput
-                    style={styles.inputs}
+                    style={styles.inputsEmail}
                     onChangeText={(text) => this.setState({email: text})}
                     value={this.state.email}
                 />
@@ -70,20 +70,41 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        paddingBottom: '45%'
+        paddingBottom: '45%',
+        backgroundColor: '#35605a',
     },
     heading: {
         fontSize: 16,
-        flex: 1
+        fontWeight: 'bold',
+        flex: 1,
+        backgroundColor: "#318752",
+        textAlign: 'center justify',
+        margin: 10,
+        padding: 10
     },
     inputs: {
         flex: 1,
         width: '80%',
-        padding: 10
+        padding: 10,
+        backgroundColor: '#FFFFFF',
+    },
+    inputsEmail: {
+        flex: 1,
+        width: '80%',
+        padding: 10,
+        backgroundColor: '#FFFFFF',
+        marginBottom: 10
     },
     multiInput: {
         flex: 2,
-        width: '90%',
-        padding: 20
+        width: '80%',
+        padding: 10,
+        margin: 20,
+        backgroundColor: '#FFFFFF',
+    },
+    buttons: {
+        backgroundColor: '#42f5a1',
+        margin: 10,
+        padding: 10
     }
 });

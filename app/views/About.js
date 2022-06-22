@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView, Image } from 'react-native';
 
-const aboutGlobo = `We are a survey company.`
+const aboutGlobo = `We are a tech solutions company.`
 
-const whatGlobo = `We help companies find appropriate tech talent.`
+const whatGlobo = `We provide tech solutions to tech companies.`
 
 export class About extends React.Component {
     static navigationOptions = {
@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
     },
     aboutTitle: {
         paddingTop: 10,
-        textAlign: 'center'
+        textAlign: 'center',
+        fontSize: 'bold'
     },
     aboutText: {
         paddingBottom: 20,

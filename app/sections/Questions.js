@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, TouchableHighlight } from 'react-native';
+import { Text, StyleSheet, View, TouchableHighlight } from 'react-native';
 
 export class Question extends React.Component {
     static navigationOptions = {
@@ -9,7 +9,7 @@ export class Question extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isSselected: false,
+            isSelected: false,
             isCorrect: false
         }
     };

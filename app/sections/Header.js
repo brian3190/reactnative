@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     headStyle: {
         paddingTop: 30,
         paddingRight: 10,
+        paddingBottom: 10,
         backgroundColor: Platform.OS === 'android'? '#35605a' :'#31e981',
         flex: 1,
         flexDirection: 'row',

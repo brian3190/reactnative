@@ -52,6 +52,7 @@ export class Register extends React.Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.heading}>Register Account</Text>
+
                 <TextInput
                     style={styles.inputs}
                     onChangeText={(text) => this.setState({username: text})}
@@ -96,16 +97,24 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         paddingBottom: '45%',
-        paddingTop: '10%' 
+        paddingTop: '10%',
+        backgroundColor: '#35605a' 
     },
     heading: {
-        fontSize: 16,
-        flex: 1
+        fontSize: 20,
+        fontWeight: 'bold',
+        borderRadius: 6,
+        borderColor:  '#20232a',
+        borderWidth: 4,
+        flex: 1,
+        backgroundColor: '#34eb71',
+        padding: 20
     },
     inputs: {
         flex: 1,
         width: '80%',
-        padding: 10
+        padding: 10,
+        backgroundColor: '#FFFFFF'
     },
     buttons: {
         marginTop: 15,
